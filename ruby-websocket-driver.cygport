@@ -1,0 +1,12 @@
+inherit rubygem
+
+NAME="ruby-websocket-driver"
+VERSION=0.6.5
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby WebSocket protocol handler"
+DESCRIPTION="WebSocket protocol handler with pluggable I/O for Ruby"
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_websocket_driver_CONTENTS="${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_websocket_driver_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
